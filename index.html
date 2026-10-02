@@ -206,7 +206,57 @@ footer {
   .about,
   .service-grid {
     grid-template-columns: 1fr;
-  }
+/* Trusted Banks Section Styling */
+.trusted-banks-section {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+.bank-badge {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.trusted-banks-section h2 {
+    font-size: 28px;
+    margin: 5px 0 10px 0;
+    font-weight: 700;
+    color: #ffffff;
+}
+.trusted-banks-section p.sub-text {
+    font-size: 14px;
+    color: #a0aec0;
+    margin-bottom: 35px;
+}
+.banks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.bank-card-box {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 22px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.bank-card-box img {
+    max-height: 50px;
+    max-width: 85%;
+    object-fit: contain;
+}
 }
 </style>
 </head>
@@ -332,7 +382,26 @@ footer {
 
   </div>
 </section>
+<!-- TRUSTED BY LEADING BANKS SECTION -->
+<section class="trusted-banks-section">
+    <div class="bank-badge">WHO WE SERVE</div>
+    <h2>Trusted by</h2>
+    <p class="sub-text">Serving every side of the property ecosystem with focused legal support.</p>
+    
+    <h3 style="font-size: 20px; margin-bottom: 20px; color: #ffffff;">Leading Banks</h3>
 
+    <div class="banks-container">
+        <!-- Repco Bank -->
+        <div class="bank-card-box">
+            <img src="https://www.repcobank.com/images/logo.png" alt="Repco Bank">
+        </div>
+        
+        <!-- Repco Home Finance Limited -->
+        <div class="bank-card-box">
+            <img src="https://www.repcohome.com/images/logo.png" alt="Repco Home Finance Limited">
+        </div>
+    </div>
+</section>
 <section id="contact" class="contact">
 
   <h2>Need Legal Assistance?</h2>
