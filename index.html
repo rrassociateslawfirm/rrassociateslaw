@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RR Associates Law | Legal Services</title>
+   <title>RR Associates Law | Legal Services</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        header nav a {
+            font-weight: 800 !important;
+            font-size: 15px !important;
+            color: #0d233a !important;
+            text-transform: uppercase;
+        }
+
+       * {
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
@@ -16,6 +21,7 @@
             color: #222;
             background: #faf9f6;
             line-height: 1.6;
+        }
        header {
   padding: 20px 7%;
   display: flex;
@@ -369,40 +375,66 @@ footer {
       <h3>Legal Consultation</h3>
       <p>
         Clear and professional consultation based
-        on the individual legal requirements of clients.
-      </p>
-    </div>
-
-  </div>
-</section>
-<!-- TRUSTED BY LEADING BANKS SECTION -->
-<section class="trusted-banks-section">
-    <div class="bank-badge">WHO WE SERVE</div>
-    <h2>Trusted by</h2>
-    <p class="sub-text">Serving every side of the property ecosystem with focused legal support.</p>
+      <!-- TRUSTED BY LEADING BANKS SECTION -->
+<section class="trusted-banks-section" id="banks" style="background-color: #0d233a; padding: 60px 20px; text-align: center; color: #ffffff;">
+    <div style="display: inline-block; background: rgba(255, 255, 255, 0.15); color: #ffffff; padding: 6px 18px; border-radius: 20px; font-size: 13px; font-weight: 600; letter-spacing: 1px; margin-bottom: 20px; text-transform: uppercase;">WHO WE SERVE</div>
+    <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #ffffff;">Trusted by</h2>
+    <p style="font-size: 15px; color: #cbd5e1; max-width: 600px; margin: 0 auto 35px auto; line-height: 1.5;">Serving every side of the property ecosystem with focused legal support.</p>
     
-    <h3 style="font-size: 20px; margin-bottom: 20px; color: #ffffff;">Leading Banks</h3>
+    <h3 style="font-size: 22px; font-weight: 600; margin-bottom: 25px; color: #ffffff;">Leading Banks</h3>
 
-    <div class="banks-container">
-        <!-- Repco Bank -->
-        <div class="bank-card-box">
-            <img src="https://images.seeklogo.com/logo-png/43/1/repco-bank-logo-png_seeklogo-439566.png" alt="Repco Bank">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 450px; margin: 0 auto;">
+        
+        <!-- REPCO BANK CARD -->
+        <div style="background: #ffffff; width: 100%; padding: 20px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90px;">
+            <div style="font-size: 26px; font-weight: 900; color: #d91b5c; font-family: Arial, sans-serif; letter-spacing: -0.5px;">
+                Repco <span style="color: #0d233a;">BANK</span>
+            </div>
+            <span style="font-size: 11px; font-weight: 700; color: #555; margin-top: 4px; letter-spacing: 0.5px;">GOVT. OF INDIA ENTERPRISE</span>
         </div>
         
-        <!-- Repco Home Finance Limited -->
-        <div class="bank-card-box">
-            <img src="https://images.seeklogo.com/logo-png/50/1/repco-home-finance-logo-png_seeklogo-503411.png" alt="Repco Home Finance Limited">
+        <!-- REPCO HOME FINANCE CARD -->
+        <div style="background: #ffffff; width: 100%; padding: 20px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 90px;">
+            <div style="font-size: 24px; font-weight: 900; color: #d91b5c; font-family: Arial, sans-serif;">
+                Repco <span style="color: #0d233a;">Home Finance</span>
+            </div>
+            <span style="font-size: 11px; font-weight: 700; color: #d91b5c; margin-top: 4px; font-style: italic;">We value your Dream</span>
         </div>
+
     </div>
 </section>
 
-<section id="contact" class="contact">
+<!-- CONTACT & CONSULTATION FORM SECTION -->
+<section id="contact" style="padding: 60px 20px; background-color: #f8fafc; text-align: center;">
+    <h2 style="font-size: 28px; font-weight: 700; color: #0d233a; margin-bottom: 10px;">Get Legal Consultation</h2>
+    <p style="color: #64748b; margin-bottom: 30px;">Fill in your details below and our legal team will get back to you shortly.</p>
 
-  <h2>Need Legal Assistance?</h2>
+    <!-- WORKING CONSULTATION FORM -->
+    <form action="https://formspree.io/f/law.rrassociates@gmail.com" method="POST" style="max-width: 500px; margin: 0 auto; text-align: left; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; font-weight: 700; color: #0d233a; margin-bottom: 5px;">Your Name</label>
+            <input type="text" name="name" placeholder="Enter your full name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+        </div>
 
-  <p>
-    Contact RR Associates Law for professional legal consultation.
-  </p>
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; font-weight: 700; color: #0d233a; margin-bottom: 5px;">Email Address</label>
+            <input type="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display: block; font-weight: 700; color: #0d233a; margin-bottom: 5px;">Phone / WhatsApp</label>
+            <input type="tel" name="phone" placeholder="Enter your contact number" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; font-weight: 700; color: #0d233a; margin-bottom: 5px;">Legal Requirement / Message</label>
+            <textarea name="message" rows="4" placeholder="Briefly describe your legal need..." required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 14px; box-sizing: border-box;"></textarea>
+        </div>
+
+        <button type="submit" style="width: 100%; background-color: #0d233a; color: #ffffff; padding: 14px; border: none; border-radius: 8px; font-weight: 700; font-size: 16px; cursor: pointer; transition: background 0.3s;">Submit Request</button>
+    </form>
+</section>
 
   <a href="mailto:your-email@example.com" class="btn">
     Email Us
