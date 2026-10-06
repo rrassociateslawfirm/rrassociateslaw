@@ -22,74 +22,28 @@
         header {
             background: #ffffff;
             border-bottom: 1px solid #eeeeee;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        .header-top {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 18px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .header-left h2 {
-            margin: 0;
+        .logo-text {
             font-size: 20px;
             font-weight: 800;
             color: #1a2332;
             letter-spacing: 0.5px;
         }
 
-        .header-left span {
-            font-size: 11px;
-            color: #666666;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-            display: block;
-            margin-top: 2px;
-        }
-
-        .header-right {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            font-size: 13px;
-            color: #444444;
-        }
-
-        .header-right a {
-            color: #444444;
-            text-decoration: none;
-        }
-
-        .btn-consult {
-            background-color: #1a2332;
-            color: #ffffff !important;
-            padding: 10px 18px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 13px;
-            display: inline-block;
-        }
-
-        nav {
-            border-top: 1px solid #f0f0f0;
-            text-align: center;
-            padding: 12px 0;
-        }
-
         nav a {
-            margin: 0 18px;
+            margin-left: 25px;
             text-decoration: none;
             color: #555555;
-            font-weight: 600;
             font-size: 14px;
+            font-weight: 600;
         }
 
         nav a:hover {
@@ -393,26 +347,7 @@
 
 <!-- HEADER SECTION -->
 <header>
-    <div class="header-top">
-        <div class="header-left">
-            <h2>RR ASSOCIATES</h2>
-            <span>ATTORNEY AT LAW</span>
-        </div>
-
-        <div class="header-right">
-            <div style="text-align: right;">
-                <div style="margin-bottom: 4px;">
-                    <a href="mailto:law.rrassociates@gmail.com">✉ law.rrassociates@gmail.com</a>
-                </div>
-                <div>
-                    <a href="https://wa.me/919150441442">💬 +91 9150441442</a>
-                </div>
-            </div>
-            <a href="#contact" class="btn-consult">Get Legal Consultation</a>
-        </div>
-    </div>
-
-    <!-- Navigation Bar -->
+    <div class="logo-text">RR ASSOCIATES</div>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -461,52 +396,16 @@
         <!-- Card 1 -->
         <div class="service-card">
             <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Legal Search">
-                <div class="card-icon-overlay">🔍</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Legal Opinions & Title Investigation</h3>
-                <p class="card-text">Detailed title search and written legal opinions to support informed property decisions.</p>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Title Clearance">
-                <div class="card-icon-overlay">✓</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Title Clearance & Rectification</h3>
-                <p class="card-text">Identifying and resolving title defects to ensure your property is bank-ready and marketable.</p>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Documentation">
-                <div class="card-icon-overlay">📝</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Legal Documentation & Drafting</h3>
-                <p class="card-text">Drafting and vetting of sale deeds, gift deeds, partition deeds, and all related legal documents.</p>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="service-card">
-            <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Property Registration">
                 <div class="card-icon-overlay">🏛</div>
             </div>
             <div class="card-content">
                 <h3 class="card-title">Property & Document Registration</h3>
-                <p class="card-text">End-to-end registration support for properties, marriages, trusts, and partnership deeds.</p>
+                <p class="card-text">End-to-end registration support for properties, marriages, firms, and partnership deeds.</p>
             </div>
         </div>
 
-        <!-- Card 5 -->
+        <!-- Card 2 -->
         <div class="service-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="Litigation">
@@ -518,15 +417,51 @@
             </div>
         </div>
 
-        <!-- Card 6 -->
+        <!-- Card 3 -->
         <div class="service-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Site Visit">
-                <div class="card-icon-overlay">📍</div>
+                <div class="card-icon-overlay">🔍</div>
             </div>
             <div class="card-content">
                 <h3 class="card-title">Property Verification & Site Visit</h3>
-                <p class="card-text">On-ground site inspection, boundary checks, and physical survey verification reports.</p>
+                <p class="card-text">On-ground site inspection, boundary checks, and digital survey with detailed verification reports.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="service-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Online Consultation">
+                <div class="card-icon-overlay">💻</div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Online & Remote Consultation</h3>
+                <p class="card-text">Consult with our advocates via phone or video call — ideal for NRIs and outstation clients.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=600&q=80" alt="RERA Complaints">
+                <div class="card-icon-overlay">🏢</div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">RERA Complaints & Disputes</h3>
+                <p class="card-text">Expert handling of complaints and disputes before the Real Estate Regulatory Authority (RERA).</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Cyber Crime Complaints">
+                <div class="card-icon-overlay">🛡</div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Police & Cyber Crime Complaints</h3>
+                <p class="card-text">Drafting and filing of police and cyber crime complaints related to property fraud.</p>
             </div>
         </div>
     </div>
