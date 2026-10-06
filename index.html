@@ -4,492 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RR ASSOCIATES</title>
-    
-    <!-- STYLISH GOOGLE FONTS FOR LAW FIRM -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800;900&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #333333;
-            background-color: #ffffff;
-            line-height: 1.6;
-        }
-
-        /* STYLISH HEADER SECTION - MUCH LARGER TEXT & CENTERED SUBTITLE */
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #eeeeee;
-            padding: 24px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-brand {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-        }
-
-        .brand-logo-icon {
-            width: 64px;
-            height: 64px;
-            background: linear-gradient(135deg, #1a2332 0%, #0d131d 100%);
-            color: #c5a059;
-            border: 2px solid #c5a059;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Cinzel', serif;
-            font-weight: 900;
-            font-size: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .brand-text-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Centers ATTORNEY AT LAW perfectly */
-            text-align: center;
-        }
-
-        .header-brand h2 {
-            font-family: 'Cinzel', serif;
-            font-size: 40px; /* Much larger font size */
-            font-weight: 900;
-            letter-spacing: 2.5px;
-            background: linear-gradient(135deg, #1a2332 0%, #c5a059 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 0;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        .header-brand span {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 13px; /* Larger subtitle */
-            color: #7b8898;
-            letter-spacing: 5px; /* Perfectly centered spacing */
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-top: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #555555;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: #1a2332;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            display: flex;
-            align-items: center;
-            padding: 60px 8%;
-            gap: 50px;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
-
-        .hero-image-container {
-            flex: 1;
-            position: relative;
-        }
-
-        .hero-image {
-            width: 100%;
-            max-width: 480px;
-            border-radius: 12px;
-            display: block;
-            object-fit: cover;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .badge-card {
-            position: absolute;
-            bottom: -20px;
-            right: 20px;
-            background-color: #1c3d5a;
-            color: #ffffff;
-            padding: 20px 25px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .badge-number {
-            font-size: 26px;
-            font-weight: 900;
-            line-height: 1;
-            margin-bottom: 5px;
-        }
-
-        .badge-text {
-            font-size: 11px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #cfd8dc;
-            font-weight: 600;
-        }
-
-        .hero-content {
-            flex: 1.2;
-        }
-
-        .hero-title {
-            font-size: 38px;
-            font-weight: 800;
-            color: #1a2332;
-            line-height: 1.25;
-            margin-bottom: 12px;
-        }
-
-        .hero-subtitle {
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            color: #888888;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-
-        .hero-desc {
-            font-size: 14px;
-            color: #666666;
-            margin-bottom: 25px;
-        }
-
-        .highlight-box {
-            background-color: #f7d6a5;
-            padding: 20px;
-            border-radius: 6px;
-            font-size: 13px;
-            color: #333333;
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }
-
-        /* SERVICES SECTION */
-        .services-section {
-            background-color: #fafafa;
-            padding: 70px 8%;
-            border-top: 1px solid #eeeeee;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-subtitle {
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            color: #777777;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-
-        .section-title {
-            font-size: 32px;
-            font-weight: 800;
-            color: #1a2332;
-            margin-bottom: 10px;
-        }
-
-        .section-desc {
-            font-size: 14px;
-            color: #666666;
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .service-card {
-            background-color: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-            border: 1px solid #f0f0f0;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-        }
-
-.card-img-wrapper {
-    position: relative;
-    height: 300px;
-    background-color: #fff;
-}
-        }
-
-        .card-img-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-.service-card h3 {
-    font-size: 24px;
-}
-
-.service-card p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-        .card-icon-overlay {
-            position: absolute;
-            bottom: -18px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 38px;
-            height: 38px;
-            background-color: #1a2332;
-            color: #ffffff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 15px;
-            border: 3px solid #ffffff;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-
-        .card-content {
-            padding: 30px 25px 25px 25px;
-            text-align: center;
-        }
-
-        .card-title {
-            font-size: 17px;
-            font-weight: 700;
-            color: #1a2332;
-            margin-bottom: 12px;
-        }
-
-        .card-text {
-            font-size: 13px;
-            color: #666666;
-            line-height: 1.6;
-        }
-
-        /* BANK / TRUSTED SECTION */
-        .bank-section {
-            padding: 60px 20px;
-            background-color: #2b3a4a;
-            color: white;
-            text-align: center;
-        }
-
-        .bank-container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .bank-subtitle {
-            font-size: 12px;
-            letter-spacing: 2px;
-            font-weight: bold;
-            color: #e2b477;
-        }
-
-        .bank-title {
-            font-size: 32px;
-            margin: 10px 0 5px 0;
-        }
-
-        .bank-desc {
-            color: #ccc;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-
-        .bank-cards-wrapper {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .bank-card {
-            background: #fdfbf7;
-            color: #333;
-            padding: 25px 40px;
-            border-radius: 12px;
-            width: 280px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        /* LOCATION & WHATSAPP SECTION */
-        .location-whatsapp-section {
-            background-color: #f4f5f7;
-            padding: 60px 8%;
-            border-top: 1px solid #e5e5e5;
-        }
-
-        .location-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto 40px auto;
-        }
-
-        .info-box {
-            background-color: #e8ecef;
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        .info-box h3 {
-            font-size: 16px;
-            color: #1a2332;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .info-box p {
-            font-size: 13px;
-            color: #555555;
-            line-height: 1.8;
-        }
-
-        .whatsapp-btn-wrapper {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background-color: #2e6b56;
-            color: #ffffff;
-            padding: 14px 28px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        /* DARK FOOTER SECTION */
-        footer {
-            background-color: #1c232b;
-            color: #a0aec0;
-            padding: 60px 8% 30px 8%;
-            font-size: 13px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-            border-bottom: 1px solid #2d3748;
-            padding-bottom: 40px;
-        }
-
-        .footer-col h3 {
-            color: #ffffff;
-            font-size: 16px;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .footer-brand-title {
-            font-family: 'Cinzel', serif;
-            color: #c5a059;
-            font-size: 20px;
-            font-weight: 800;
-            margin-bottom: 8px;
-            letter-spacing: 1px;
-        }
-
-        .footer-desc {
-            font-size: 12px;
-            line-height: 1.6;
-            color: #a0aec0;
-            margin-top: 10px;
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-
-        .footer-links a {
-            color: #a0aec0;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 25px;
-            font-size: 12px;
-            color: #718096;
-        }
-
-        @media (max-width: 850px) {
-            .hero, .location-grid, .footer-grid {
-                grid-template-columns: 1fr;
-                flex-direction: column;
-            }
-            .badge-card {
-                position: relative;
-                right: 0;
-                bottom: 0;
-                margin-top: 15px;
-            }
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, Helvetica, sans-serif; color: #333333; background-color: #ffffff; line-height: 1.6; }
+        header { background: #ffffff; border-bottom: 1px solid #eeeeee; padding: 24px 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .header-brand { display: flex; align-items: center; gap: 18px; }
+        .brand-logo-icon { width: 64px; height: 64px; background: linear-gradient(135deg, #1a2332 0%, #0d131d 100%); color: #c5a059; border: 2px solid #c5a059; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-family: 'Cinzel', serif; font-weight: 900; font-size: 30px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+        .brand-text-container { display: flex; flex-direction: column; align-items: center; text-align: center; }
+        .header-brand h2 { font-family: 'Cinzel', serif; font-size: 40px; font-weight: 900; letter-spacing: 2.5px; background: linear-gradient(135deg, #1a2332 0%, #c5a059 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 0; line-height: 1; text-transform: uppercase; }
+        .header-brand span { font-family: 'Montserrat', sans-serif; font-size: 13px; color: #7b8898; letter-spacing: 5px; font-weight: 700; text-transform: uppercase; margin-top: 8px; width: 100%; text-align: center; }
+        nav a { margin-left: 25px; text-decoration: none; color: #555555; font-size: 14px; font-weight: 600; }
+        nav a:hover { color: #1a2332; }
+        .hero { display: flex; align-items: center; padding: 60px 8%; gap: 50px; max-width: 1300px; margin: 0 auto; }
+        .hero-image-container { flex: 1; position: relative; }
+        .hero-image { width: 100%; max-width: 480px; border-radius: 12px; display: block; object-fit: cover; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
+        .badge-card { position: absolute; bottom: -20px; right: 20px; background-color: #1c3d5a; color: #ffffff; padding: 20px 25px; border-radius: 8px; text-align: center; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+        .badge-number { font-size: 26px; font-weight: 900; line-height: 1; margin-bottom: 5px; }
+        .badge-text { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #cfd8dc; font-weight: 600; }
+        .hero-content { flex: 1.2; }
+        .hero-title { font-size: 38px; font-weight: 800; color: #1a2332; line-height: 1.25; margin-bottom: 12px; }
+        .hero-subtitle { font-size: 12px; font-weight: 800; letter-spacing: 1.5px; color: #888888; text-transform: uppercase; margin-bottom: 25px; }
+        .hero-desc { font-size: 14px; color: #666666; margin-bottom: 25px; }
+        .highlight-box { background-color: #f7d6a5; padding: 20px; border-radius: 6px; font-size: 13px; color: #333333; line-height: 1.6; margin-bottom: 25px; }
+        .detailed-services-section { background-color: #f8f9fa; padding: 70px 8%; border-top: 1px solid #eeeeee; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-subtitle { font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: #777777; text-transform: uppercase; margin-bottom: 8px; }
+        .section-title { font-size: 32px; font-weight: 800; color: #1a2332; margin-bottom: 10px; }
+        .section-desc { font-size: 14px; color: #666666; max-width: 650px; margin: 0 auto; }
+        .service-row-card { background-color: #ffffff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #eaeaea; display: flex; align-items: center; gap: 40px; padding: 40px; margin-bottom: 30px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+        .service-row-card.reverse { flex-direction: row-reverse; }
+        .service-row-content { flex: 1.3; }
+        .service-row-title { font-size: 24px; font-weight: 800; color: #1a2332; margin-bottom: 12px; font-family: 'Cinzel', serif; }
+        .service-row-desc { font-size: 14px; color: #555555; margin-bottom: 20px; line-height: 1.6; }
+        .service-points-list { list-style: none; margin-bottom: 25px; }
+        .service-points-list li { position: relative; padding-left: 20px; font-size: 13px; color: #444444; margin-bottom: 10px; line-height: 1.5; }
+        .service-points-list li::before { content: "•"; position: absolute; left: 0; color: #c5a059; font-weight: bold; font-size: 18px; }
+        .book-btn { display: inline-block; background-color: #ffffff; color: #1a2332; border: 2px solid #1a2332; padding: 10px 24px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 13px; transition: all 0.2s ease; }
+        .book-btn:hover { background-color: #1a2332; color: #ffffff; }
+        .service-row-image-container { flex: 1; position: relative; }
+        .service-row-img { width: 100%; height: 260px; object-fit: cover; border-radius: 8px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+        .bank-section { padding: 60px 20px; background-color: #2b3a4a; color: white; text-align: center; }
+        .bank-container { max-width: 900px; margin: 0 auto; }
+        .bank-subtitle { font-size: 12px; letter-spacing: 2px; font-weight: bold; color: #e2b477; }
+        .bank-title { font-size: 32px; margin: 10px 0 5px 0; }
+        .bank-desc { color: #ccc; font-size: 14px; margin-bottom: 30px; }
+        .bank-cards-wrapper { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .bank-card { background: #fdfbf7; color: #333; padding: 25px 40px; border-radius: 12px; width: 280px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .location-whatsapp-section { background-color: #f4f5f7; padding: 60px 8%; border-top: 1px solid #e5e5e5; }
+        .location-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1200px; margin: 0 auto 40px auto; }
+        .info-box { background-color: #e8ecef; padding: 30px; border-radius: 8px; }
+        .info-box h3 { font-size: 16px; color: #1a2332; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+        .info-box p { font-size: 13px; color: #555555; line-height: 1.8; }
+        .whatsapp-btn-wrapper { text-align: center; margin-top: 20px; }
+        .whatsapp-btn { display: inline-flex; align-items: center; gap: 10px; background-color: #2e6b56; color: #ffffff; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        footer { background-color: #1c232b; color: #a0aec0; padding: 60px 8% 30px 8%; font-size: 13px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 40px; max-width: 1200px; margin: 0 auto; border-bottom: 1px solid #2d3748; padding-bottom: 40px; }
+        .footer-col h3 { color: #ffffff; font-size: 16px; margin-bottom: 15px; font-weight: 700; }
+        .footer-brand-title { font-family: 'Cinzel', serif; color: #c5a059; font-size: 20px; font-weight: 800; margin-bottom: 8px; letter-spacing: 1px; }
+        .footer-desc { font-size: 12px; line-height: 1.6; color: #a0aec0; margin-top: 10px; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a { color: #a0aec0; text-decoration: none; transition: color 0.2s; }
+        .footer-links a:hover { color: #ffffff; }
+        .footer-bottom { text-align: center; padding-top: 25px; font-size: 12px; color: #718096; }
+        @media (max-width: 992px) { .location-grid { grid-template-columns: 1fr; } .service-row-card, .service-row-card.reverse { flex-direction: column; padding: 25px; } }
+        @media (max-width: 850px) { .hero, .footer-grid { grid-template-columns: 1fr; flex-direction: column; } .badge-card { position: relative; right: 0; bottom: 0; margin-top: 15px; } }
     </style>
 </head>
-<body>
+    <body>
 
-<!-- STYLISH & LARGER HEADER SECTION -->
+<!-- HEADER SECTION -->
 <header>
     <div class="header-brand">
         <div class="brand-logo-icon">RR</div>
@@ -527,127 +114,131 @@
         <div class="highlight-box">
             Backed by a dedicated team of experienced advocates, we serve clients across the country. From first-time homebuyers to corporate developers, we provide end-to-end legal protection at every stage.
         </div>
-
-        <p class="hero-desc">
-            With a strong reputation in property law and registration matters, we are committed to delivering trusted legal services that create meaningful, long-term value for our clients.
-        </p>
     </div>
 </section>
 
-<!-- SERVICES SECTION -->
-<section id="services" class="services-section">
+<!-- DETAILED SERVICES SECTION -->
+<section id="services" class="detailed-services-section">
     <div class="section-header">
         <div class="section-subtitle">WHAT WE DO</div>
         <h2 class="section-title">Complete Legal Solutions For Property Matters</h2>
-        <p class="section-desc">Specialised legal services designed around your real estate and property requirements</p>
+        <p class="section-desc">Comprehensive legal services with detailed individual guidance for your peace of mind</p>
     </div>
 
-    <div class="services-grid">
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="Legal Opinions">
-                <div class="card-icon-overlay">📋</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Legal Opinions & Title Investigation</h3>
-                <p class="card-text">Detailed title search and written legal opinions to support informed property decisions.</p>
-            </div>
+    <!-- Service 1 -->
+    <div class="service-row-card">
+        <div class="service-row-content">
+            <h3 class="service-row-title">Legal Opinions & Title Investigation</h3>
+            <p class="service-row-desc">We conduct thorough title searches and provide detailed written legal opinions to support informed property purchase decisions.</p>
+            <ul class="service-points-list">
+                <li>Comprehensive title verification across previous encumbrances and ownership chains.</li>
+                <li>Detailed legal opinion drafting for safe property investments and bank loans.</li>
+                <li>Verification of parent documents, patta, chitta, and statutory approvals.</li>
+            </ul>
+            <a href="https://wa.me/919150441442?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation%20for%20Legal%20Opinions." target="_blank" class="book-btn">Book Now</a>
         </div>
-
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Title Clearance">
-                <div class="card-icon-overlay">✓</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Title Clearance & Rectification</h3>
-                <p class="card-text">Identifying and resolving title defects to ensure your property is bank-ready and marketable.</p>
-            </div>
+        <div class="service-row-image-container">
+            <img class="service-row-img" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="Legal Opinions">
         </div>
+    </div>
 
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Legal Documentation">
-                <div class="card-icon-overlay">📝</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Legal Documentation & Drafting</h3>
-                <p class="card-text">Drafting and vetting of sale deeds, gift deeds, partition deeds, and all related legal documents.</p>
-            </div>
+    <!-- Service 2 -->
+    <div class="service-row-card reverse">
+        <div class="service-row-content">
+            <h3 class="service-row-title">Property & Document Registration</h3>
+            <p class="service-row-desc">We manage the complete registration process seamlessly from document readiness to completion before the registering authority.</p>
+            <ul class="service-points-list">
+                <li>Preparation of registration-ready documentation, stamp duty guidance, and appointment scheduling.</li>
+                <li>On-site support before the Sub-Registrar for execution, verification, and procedural compliance.</li>
+                <li>Assistance for property, marriage, firm, and partnership deed registrations where applicable.</li>
+            </ul>
+            <a href="https://wa.me/919150441442?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation%20for%20Property%20Registration." target="_blank" class="book-btn">Book Now</a>
         </div>
-
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Property Registration">
-                <div class="card-icon-overlay">🏛</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Property & Document Registration</h3>
-                <p class="card-text">End-to-end registration support for properties, marriages, firms, and partnership deeds.</p>
-            </div>
+        <div class="service-row-image-container">
+            <img class="service-row-img" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Property Registration">
         </div>
+    </div>
 
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Litigation">
-                <div class="card-icon-overlay">⚖</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Litigation & Dispute Resolution</h3>
-                <p class="card-text">Strategic representation in civil and property disputes, injunctions, and court proceedings.</p>
-            </div>
+    <!-- Service 3 -->
+    <div class="service-row-card">
+        <div class="service-row-content">
+            <h3 class="service-row-title">Title Clearance & Rectification</h3>
+            <p class="service-row-desc">Identifying and resolving complex title defects to ensure your property becomes fully bank-ready and legally marketable.</p>
+            <ul class="service-points-list">
+                <li>Resolving boundary mismatches, legal heir issues, and missing link documents.</li>
+                <li>Drafting rectification deeds and obtaining necessary declarations.</li>
+                <li>Clearing encumbrances and securing clear title certificates.</li>
+            </ul>
+            <a href="https://wa.me/919150441442?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation%20for%20Title%20Clearance." target="_blank" class="book-btn">Book Now</a>
         </div>
-
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Property Verification">
-                <div class="card-icon-overlay">🔍</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Property Verification & Site Visit</h3>
-                <p class="card-text">On-ground site inspection, boundary checks, and digital survey with detailed verification reports.</p>
-            </div>
+        <div class="service-row-image-container">
+            <img class="service-row-img" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Title Clearance">
         </div>
+    </div>
 
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Online Consultation">
-                <div class="card-icon-overlay">💻</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Online & Remote Consultation</h3>
-                <p class="card-text">Consult with our advocates via phone or video call — ideal for NRIs and outstation clients.</p>
-            </div>
+    <!-- Service 4 -->
+    <div class="service-row-card reverse">
+        <div class="service-row-content">
+            <h3 class="service-row-title">Litigation & Property Disputes</h3>
+            <p class="service-row-desc">We represent clients in civil and property disputes with strategic approaches anchored in strong legal facts, documents, and procedural actions.</p>
+            <ul class="service-points-list">
+                <li>Handling of injunction suits, partition suits, and specific performance matters.</li>
+                <li>Expert advocacy across civil courts and appropriate judicial forums.</li>
+                <li>Drafting strong plaints, written statements, and legal notices.</li>
+            </ul>
+            <a href="https://wa.me/919150441442?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation%20for%20Litigation." target="_blank" class="book-btn">Book Now</a>
         </div>
+        <div class="service-row-image-container">
+            <img class="service-row-img" src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Litigation">
+        </div>
+    </div>
 
-        <div class="service-card">
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=600&q=80" alt="Police Complaints">
-                <div class="card-icon-overlay">🛡</div>
-            </div>
-            <div class="card-content">
-                <h3 class="card-title">Police & Cyber Crime Complaints</h3>
-                <p class="card-text">Drafting and filing of police and cyber crime complaints related to property fraud.</p>
-            </div>
+    <!-- Service 5 -->
+    <div class="service-row-card">
+        <div class="service-row-content">
+            <h3 class="service-row-title">Legal Documentation & Drafting</h3>
+            <p class="service-row-desc">Meticulous drafting and vetting of all legal instruments to protect your commercial and personal interests.</p>
+            <ul class="service-points-list">
+                <li>Drafting of Sale Deeds, Settlement Deeds, Gift Deeds, and Lease Agreements.</li>
+                <li>Vetting third-party draft agreements to safeguard your legal rights.</li>
+                <li>Customized drafting matching current statutory norms.</li>
+            </ul>
+            <a href="https://wa.me/919150441442?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation%20for%20Documentation." target="_blank" class="book-btn">Book Now</a>
+        </div>
+        <div class="service-row-image-container">
+            <img class="service-row-img" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Legal Documentation">
+        </div>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="service-row-card reverse">
+        <div class="service-row-content">
+            <h3 class="service-row-title">Property Verification & Site Visit</h3>
+            <p class="service-row-desc">Rigorous physical and on-ground verification services to protect you from real estate fraud and boundary disputes.</p>
+            <ul class="service-points-list">
+                <li>On-ground physical inspection and verification of land parcels and buildings.</li>
+                <li>Checking possession status, encroachments, and neighborhood verification.</li>
+                <li>Detailed inspection reports backed by photographic evidence.</li>
+            </ul>
+            <a href="https://wa.me/919150441442?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation%20for%20Property%20Verification." target="_blank" class="book-btn">Book Now</a>
+        </div>
+        <div class="service-row-image-container">
+            <img class="service-row-img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Property Verification">
         </div>
     </div>
 </section>
-
 <!-- TRUSTED BY BANKS SECTION -->
 <section class="bank-section">
     <div class="bank-container">
         <span class="bank-subtitle">WHO WE SERVE</span>
         <h2 class="bank-title">Trusted by</h2>
         <p class="bank-desc">Serving every side of the property ecosystem with focused legal support.</p>
-        
         <h3 style="font-size: 22px; margin-bottom: 25px; color: #fff;">Leading Banks</h3>
-
         <div class="bank-cards-wrapper">
             <div class="bank-card">
                 <h3 style="margin: 0; color: #a83232; font-size: 22px; font-weight: bold;">Repco BANK</h3>
-                <span style="font-size: 11px; color: #666; font-weight: bold; letter-spacing: 0.5px; display: block; margin-top: 4px;">GOVT. OF INDIA ENTERPRISE</span>
+                <span style="font-size: 11px; color: #666; font-weight: bold; display: block; margin-top: 4px;">GOVT. OF INDIA ENTERPRISE</span>
             </div>
-
             <div class="bank-card">
                 <h3 style="margin: 0; color: #a83232; font-size: 20px; font-weight: bold;">Repco Home Finance</h3>
                 <span style="font-size: 11px; color: #888; font-style: italic; display: block; margin-top: 4px;">We value your Dream</span>
@@ -661,28 +252,21 @@
     <div class="location-grid">
         <div class="info-box">
             <h3>📍 Head Office</h3>
-            <p>
-                48/11, M.K.B NAGAR,<br>
-                MANALI SALAI, VYSARPADI,<br>
-                CHENNAI - 600039
-            </p>
+            <p>48/11, Manali Salai,<br>M.K.B. Nagar,<br>Chennai - 600039</p>
         </div>
-
+        <div class="info-box">
+            <h3>⚖️ Branch Office</h3>
+            <p>New Addl Law Chambers,<br>Fourth Floor, High Court Building,<br>Chennai - 600104</p>
+        </div>
         <div class="info-box">
             <h3>💬 WhatsApp Us Anytime</h3>
-            <p>
-                Reach us instantly on WhatsApp for consultations and appointment bookings.<br><br>
-                <strong>Phone / WhatsApp:</strong> +91 9150441442<br>
-                <strong>Email:</strong> law.rrassociates@gmail.com<br>
-                <strong>Working Hours:</strong> Mon - Sat: 10:30 AM - 5:30 PM
-            </p>
+            <p>Reach us instantly on WhatsApp for consultations and bookings.<br><br>
+            <strong>Phone / WhatsApp:</strong> +91 9150441442<br>
+            <strong>Email:</strong> law.rrassociates@gmail.com</p>
         </div>
     </div>
-
     <div class="whatsapp-btn-wrapper">
-        <a href="https://wa.me/919150441442" target="_blank" class="whatsapp-btn">
-            💬 WhatsApp Us
-        </a>
+        <a href="https://wa.me/919150441442" target="_blank" class="whatsapp-btn">💬 WhatsApp Us</a>
     </div>
 </section>
 
@@ -691,11 +275,8 @@
     <div class="footer-grid">
         <div class="footer-col">
             <div class="footer-brand-title">RR ASSOCIATES</div>
-            <p class="footer-desc">
-                Chennai's trusted property law firm — delivering reliable real estate legal solutions for more than a decade.
-            </p>
+            <p class="footer-desc">Chennai's trusted property law firm — delivering reliable real estate legal solutions for more than a decade.</p>
         </div>
-
         <div class="footer-col">
             <h3>Quick Links</h3>
             <ul class="footer-links">
@@ -705,7 +286,6 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
             <h3>Our Services</h3>
             <ul class="footer-links">
@@ -715,20 +295,16 @@
                 <li><a href="#services">Property Verification</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
             <h3>Contact Info</h3>
             <p class="footer-desc">
-               48/11, Manali salai, M.K.B Nagar, CHENNAI - 600039<br><br>
-strong>High Court Office:</strong><br> New Addl Law chambers, fourth floor, highcourt building, chennai-600104<br><br>  📞 +91 9150441442<br>
-   ✉️ law.rrassociates@gmail.com
+                <strong>Head Office:</strong> 48/11, Manali Salai, M.K.B. Nagar, Chennai - 600039<br><br>
+                <strong>Branch:</strong> New Addl Law Chambers, 4th Floor, High Court Building, Chennai - 600104<br><br>
+                📞 +91 9150441442<br>✉ law.rrassociates@gmail.com
             </p>
         </div>
     </div>
-
-    <div class="footer-bottom">
-        &copy; 2026 RR ASSOCIATES. All Rights Reserved.
-    </div>
+    <div class="footer-bottom">&copy; 2026 RR ASSOCIATES. All Rights Reserved.</div>
 </footer>
 
 </body>
