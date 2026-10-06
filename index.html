@@ -31,11 +31,21 @@
             z-index: 1000;
         }
 
-        .logo-text {
+        .header-brand h2 {
             font-size: 20px;
             font-weight: 800;
             color: #1a2332;
             letter-spacing: 0.5px;
+            margin: 0;
+        }
+
+        .header-brand span {
+            font-size: 11px;
+            color: #666666;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            display: block;
+            margin-top: 2px;
         }
 
         nav a {
@@ -198,10 +208,9 @@
         .card-img-wrapper {
             position: relative;
             height: 200px;
-            background-color: #e2dcd5;
         }
 
-        .card-img-wrapper svg, .card-img-wrapper img {
+        .card-img-wrapper img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -349,7 +358,10 @@
 
 <!-- HEADER SECTION -->
 <header>
-    <div class="logo-text">RR ASSOCIATES</div>
+    <div class="header-brand">
+        <h2>RR ASSOCIATES</h2>
+        <span>ATTORNEY AT LAW</span>
+    </div>
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -386,7 +398,7 @@
     </div>
 </section>
 
-<!-- SERVICES SECTION (EXACT MATCH OF USER PHOTO) -->
+<!-- SERVICES SECTION -->
 <section id="services" class="services-section">
     <div class="section-header">
         <div class="section-subtitle">WHAT WE DO</div>
@@ -395,50 +407,10 @@
     </div>
 
     <div class="services-grid">
-        
-        <!-- CARD 1: Exact Graphic Reproduction of Stamp Papers + Legal Opinion -->
+        <!-- Card 1 -->
         <div class="service-card">
             <div class="card-img-wrapper">
-                <svg viewBox="0 0 400 200" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                    <!-- Background Warm Tone -->
-                    <rect width="400" height="200" fill="#d8c5b2"/>
-                    
-                    <!-- Left: Stamp Paper -->
-                    <g transform="translate(15, 15) rotate(-3)">
-                        <rect width="160" height="170" fill="#fdfaf3" rx="3" stroke="#b09c85" stroke-width="1.5"/>
-                        <rect x="10" y="10" width="140" height="40" fill="#b85a3c" rx="2" opacity="0.85"/>
-                        <text x="80" y="28" font-family="Arial, serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">भारत INDIA Rs. 10</text>
-                        <text x="80" y="42" font-family="Arial" font-size="9" fill="#f5e1d3" text-anchor="middle">Agreement For Sale</text>
-                        <line x1="20" y1="70" x2="140" y2="70" stroke="#888" stroke-dasharray="2,2"/>
-                        <line x1="20" y1="85" x2="140" y2="85" stroke="#ccc"/>
-                        <line x1="20" y1="100" x2="120" y2="100" stroke="#ccc"/>
-                        <text x="80" y="140" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#555" text-anchor="middle">Sale Deed</text>
-                    </g>
-                    
-                    <!-- Magnifying Glass Rs. 20 -->
-                    <g transform="translate(125, 95)">
-                        <circle cx="25" cy="25" r="22" fill="none" stroke="#2b2b2b" stroke-width="5"/>
-                        <circle cx="25" cy="25" r="20" fill="#ffffff" opacity="0.4"/>
-                        <text x="25" y="29" font-family="Arial" font-size="11" font-weight="bold" fill="#111" text-anchor="middle">Rs. 20</text>
-                        <line x1="40" y1="40" x2="60" y2="60" stroke="#2b2b2b" stroke-width="6" stroke-linecap="round"/>
-                    </g>
-
-                    <!-- Right: Legal Opinion Document -->
-                    <g transform="translate(210, 10) rotate(2)">
-                        <rect width="170" height="180" fill="#ffffff" rx="2" stroke="#d0d0d0" stroke-width="1"/>
-                        <text x="85" y="22" font-family="Arial" font-size="10" font-weight="bold" fill="#1a2332" text-anchor="middle">RR ASSOCIATES</text>
-                        <text x="85" y="32" font-family="Arial" font-size="7" fill="#666" text-anchor="middle">ADVOCATES & LEGAL CONSULTANTS</text>
-                        <rect x="50" y="42" width="70" height="12" fill="#eaeaea" rx="2"/>
-                        <text x="85" y="51" font-family="Arial" font-size="7" font-weight="bold" fill="#333" text-anchor="middle">LEGAL OPINION</text>
-                        <line x1="15" y1="70" x2="155" y2="70" stroke="#999" stroke-width="0.8"/>
-                        <line x1="15" y1="82" x2="155" y2="82" stroke="#bbb" stroke-width="0.6"/>
-                        <line x1="15" y1="94" x2="155" y2="94" stroke="#bbb" stroke-width="0.6"/>
-                        <line x1="15" y1="106" x2="130" y2="106" stroke="#bbb" stroke-width="0.6"/>
-                        <line x1="15" y1="118" x2="145" y2="118" stroke="#bbb" stroke-width="0.6"/>
-                        <path d="M 110,155 Q 125,145 145,150" stroke="#1c3d5a" stroke-width="1.5" fill="none"/>
-                        <text x="127" y="165" font-family="Arial" font-size="7" fill="#666" text-anchor="middle">Advocate</text>
-                    </g>
-                </svg>
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=600&q=80" alt="Legal Opinions">
                 <div class="card-icon-overlay">📋</div>
             </div>
             <div class="card-content">
@@ -447,40 +419,10 @@
             </div>
         </div>
 
-        <!-- CARD 2: Exact Graphic Reproduction of Property Title Clearance Certificate + APPROVED Stamp -->
+        <!-- Card 2 -->
         <div class="service-card">
             <div class="card-img-wrapper">
-                <svg viewBox="0 0 400 200" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                    <rect width="400" height="200" fill="#cfc2b2"/>
-                    
-                    <!-- Title Clearance Certificate -->
-                    <g transform="translate(20, 15)">
-                        <rect width="360" height="170" fill="#fefdfa" rx="4" stroke="#b5a490" stroke-width="2"/>
-                        <!-- Emblem & Header -->
-                        <circle cx="180" cy="30" r="12" fill="#e8cca4" stroke="#8c6d46"/>
-                        <text x="180" y="54" font-family="Arial, serif" font-size="12" font-weight="bold" fill="#111" text-anchor="middle" letter-spacing="0.5">PROPERTY TITLE CLEARANCE CERTIFICATE</text>
-                        <line x1="50" y1="62" x2="310" y2="62" stroke="#8c6d46" stroke-width="1"/>
-                        
-                        <!-- Document lines -->
-                        <line x1="40" y1="80" x2="320" y2="80" stroke="#ddd"/>
-                        <line x1="40" y1="95" x2="320" y2="95" stroke="#ddd"/>
-                        <line x1="40" y1="110" x2="280" y2="110" stroke="#ddd"/>
-                        
-                        <!-- GREEN APPROVED SEAL -->
-                        <g transform="translate(180, 125) rotate(-8)">
-                            <rect x="-65" y="-18" width="130" height="36" fill="none" stroke="#2d7d46" stroke-width="3" rx="4"/>
-                            <rect x="-61" y="-14" width="122" height="28" fill="none" stroke="#2d7d46" stroke-width="1" rx="2"/>
-                            <text x="0" y="4" font-family="Arial" font-size="16" font-weight="900" fill="#2d7d46" text-anchor="middle" letter-spacing="1.5">APPROVED</text>
-                            <text x="0" y="-15" font-family="Arial" font-size="6" font-weight="bold" fill="#2d7d46" text-anchor="middle">VERIFIED & APPROVED</text>
-                        </g>
-                    </g>
-                    
-                    <!-- Stamp Tool Top Hand -->
-                    <g transform="translate(210, -10)">
-                        <path d="M 20,20 Q 30,50 25,80 L 45,80 Q 40,50 50,20 Z" fill="#2b2b2b"/>
-                        <ellipse cx="35" cy="82" rx="20" ry="6" fill="#111"/>
-                    </g>
-                </svg>
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&q=80" alt="Title Clearance">
                 <div class="card-icon-overlay">✓</div>
             </div>
             <div class="card-content">
@@ -489,35 +431,10 @@
             </div>
         </div>
 
-        <!-- CARD 3: Exact Graphic Reproduction of Tamil Nadu Govt Sale Deed -->
+        <!-- Card 3 -->
         <div class="service-card">
             <div class="card-img-wrapper">
-                <svg viewBox="0 0 400 200" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
-                    <rect width="400" height="200" fill="#d5c8ba"/>
-                    
-                    <!-- Sale Deed Document -->
-                    <g transform="translate(30, 10) rotate(1)">
-                        <rect width="340" height="180" fill="#ffffff" rx="2" stroke="#bbb"/>
-                        
-                        <!-- Stamp Top Header -->
-                        <rect x="20" y="15" width="300" height="45" fill="#f7f3eb" stroke="#d5c5b0"/>
-                        <circle cx="50" cy="37" r="12" fill="#d97736" opacity="0.8"/>
-                        <text x="170" y="30" font-family="Arial" font-size="8" font-weight="bold" fill="#444" text-anchor="middle">தமிழ்நாடு TAMIL NADU REGISTRATION</text>
-                        <text x="170" y="45" font-family="Arial, serif" font-size="14" font-weight="bold" fill="#992222" text-anchor="middle">சொத்து விற்பனை பத்திரம் / SALE DEED</text>
-                        
-                        <line x1="30" y1="75" x2="310" y2="75" stroke="#ccc"/>
-                        <line x1="30" y1="90" x2="310" y2="90" stroke="#ccc"/>
-                        <line x1="30" y1="105" x2="270" y2="105" stroke="#ccc"/>
-                        <line x1="30" y1="120" x2="290" y2="120" stroke="#ccc"/>
-
-                        <!-- Hand holding pen signing -->
-                        <g transform="translate(220, 110) rotate(-25)">
-                            <path d="M0,0 L15,80 L25,80 L10,0 Z" fill="#1c3d5a"/>
-                            <path d="M15,80 L20,95 L25,80 Z" fill="#d9a05b"/>
-                            <path d="M19,92 L20,98 L21,92 Z" fill="#111"/>
-                        </g>
-                    </g>
-                </svg>
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Legal Documentation">
                 <div class="card-icon-overlay">📝</div>
             </div>
             <div class="card-content">
@@ -526,7 +443,90 @@
             </div>
         </div>
 
-        <!-- CARD 4 -->
+        <!-- Card 4 -->
         <div class="service-card">
             <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Sub-Registrar O
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Property Registration">
+                <div class="card-icon-overlay">🏛</div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Property & Document Registration</h3>
+                <p class="card-text">End-to-end registration support for properties, marriages, firms, and partnership deeds.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="service-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" alt="Litigation">
+                <div class="card-icon-overlay">⚖</div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Litigation & Dispute Resolution</h3>
+                <p class="card-text">Strategic representation in civil and property disputes, injunctions, and court proceedings.</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="service-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80" alt="Site Visit">
+                <div class="card-icon-overlay">🔍</div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Property Verification & Site Visit</h3>
+                <p class="card-text">On-ground site inspection, boundary checks, and digital survey with detailed verification reports.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUSTED BY BANKS SECTION -->
+<section class="bank-section">
+    <div class="bank-container">
+        <span class="bank-subtitle">WHO WE SERVE</span>
+        <h2 class="bank-title">Trusted by</h2>
+        <p class="bank-desc">Serving every side of the property ecosystem with focused legal support.</p>
+        
+        <h3 style="font-size: 22px; margin-bottom: 25px; color: #fff;">Leading Banks</h3>
+
+        <div class="bank-cards-wrapper">
+            <div class="bank-card">
+                <h3 style="margin: 0; color: #a83232; font-size: 22px; font-weight: bold;">Repco BANK</h3>
+                <span style="font-size: 11px; color: #666; font-weight: bold; letter-spacing: 0.5px; display: block; margin-top: 4px;">GOVT. OF INDIA ENTERPRISE</span>
+            </div>
+
+            <div class="bank-card">
+                <h3 style="margin: 0; color: #a83232; font-size: 20px; font-weight: bold;">Repco Home Finance</h3>
+                <span style="font-size: 11px; color: #888; font-style: italic; display: block; margin-top: 4px;">We value your Dream</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <div class="form-container">
+        <h2 style="text-align: center; color: #1a2332; margin-bottom: 8px;">Get Legal Consultation</h2>
+        <p style="text-align: center; color: #777777; font-size: 13px; margin-bottom: 25px;">Fill in your details below and our legal team will get back to you shortly.</p>
+
+        <form action="#" method="POST">
+            <label style="font-weight: bold; font-size: 13px;">Your Name</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label style="font-weight: bold; font-size: 13px;">Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label style="font-weight: bold; font-size: 13px;">Phone / WhatsApp</label>
+            <input type="tel" placeholder="Enter your contact number" required>
+
+            <label style="font-weight: bold; font-size: 13px;">Message</label>
+            <textarea rows="4" placeholder="Briefly describe your legal need..."></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
