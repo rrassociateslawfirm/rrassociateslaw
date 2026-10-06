@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RR Associates Law | Legal Services</title>
     <style>
-        /* CSS Fixes */
         body {
             margin: 0;
             padding-top: 0px !important;
             font-family: Arial, sans-serif;
+            color: #333;
         }
 
         .service-card {
@@ -19,12 +19,37 @@
         .service-card:hover {
             transform: translateY(-5px);
         }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0d233a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1a365d;
+        }
     </style>
 </head>
 <body>
 
 <!-- HEADER SECTION -->
-<header style="background: #ffffff; border-bottom: 1px solid #eaeaea; font-family: Arial, sans-serif;">
+<header style="background: #ffffff; border-bottom: 1px solid #eaeaea; font-family: Arial, sans-serif; position: sticky; top: 0; z-index: 1000;">
     <div style="max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
         
         <div>
@@ -63,7 +88,7 @@
 </header>
 
 <!-- HERO SECTION -->
-<section id="home" style="min-height: 600px; display: flex; align-items: center; padding: 40px 8%; background: linear-gradient(rgba(15,25,18,0.72), rgba(15,25,18,0.72)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white;">
+<section id="home" style="min-height: 550px; display: flex; align-items: center; padding: 40px 8%; background: linear-gradient(rgba(15,25,18,0.72), rgba(15,25,18,0.72)), url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; color: white;">
     <div style="max-width: 700px;">
         <p style="letter-spacing: 1px; color: #e2b477; font-weight: bold; margin-bottom: 10px;">RR ASSOCIATES LAW</p>
         <h1 style="font-size: 42px; margin: 10px 0; line-height: 1.15;">Trusted Legal Services<br>With Professional Excellence</h1>
@@ -90,60 +115,4 @@
             </div>
             <div style="background: #ffffff; padding: 22px; border-radius: 10px; border-left: 4px solid #0d233a; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
                 <h4 style="font-size: 18px; font-weight: 700; color: #0d233a; margin-bottom: 8px;">2. Rigorous Due Diligence</h4>
-                <p style="font-size: 14px; color: #64748b; line-height: 1.6; margin: 0;">Our legal team leaves no stone unturned, thoroughly scrutinizing documents, title chains, and precedents to eliminate legal vulnerabilities.</p>
-            </div>
-            <div style="background: #ffffff; padding: 22px; border-radius: 10px; border-left: 4px solid #0d233a; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                <h4 style="font-size: 18px; font-weight: 700; color: #0d233a; margin-bottom: 8px;">3. Direct Communication</h4>
-                <p style="font-size: 14px; color: #64748b; line-height: 1.6; margin: 0;">We provide clear, jargon-free legal advice and keep you transparently informed throughout every stage of your proceedings.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PRACTICE AREAS -->
-<section id="practice-areas" style="padding: 60px 8%; background: #ffffff;">
-    <div style="text-align: center; margin-bottom: 40px;">
-        <h2 style="font-size: 32px; font-weight: bold; color: #111;">Practice Areas & Core Legal Services</h2>
-        <p style="color: #666; font-size: 15px; margin-top: 8px;">Comprehensive legal solutions backed by deep expertise and courtroom excellence.</p>
-    </div>
-
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto;">
-        
-        <!-- Civil Law -->
-        <div class="service-card" style="background: #fdfdfd; padding: 30px; border: 1px solid #eee; border-radius: 8px;">
-            <h3 style="font-size: 20px; color: #111; margin-bottom: 15px;">Civil Law & Dispute Resolution</h3>
-            <ul style="color: #555; font-size: 14px; line-height: 1.8; padding-left: 18px;">
-                <li>Representation in Suits for Injunction, Declaration, and Recovery.</li>
-                <li>Breach of Contract and Money Recovery Suits.</li>
-                <li>Specific Performance Suits and Property Injunctions.</li>
-                <li>Appeals, Revisions, and Writs before Higher Courts.</li>
-            </ul>
-        </div>
-
-        <!-- Property Law -->
-        <div class="service-card" style="background: #fdfdfd; padding: 30px; border: 1px solid #eee; border-radius: 8px;">
-            <h3 style="font-size: 20px; color: #111; margin-bottom: 15px;">Property & Real Estate Law</h3>
-            <ul style="color: #555; font-size: 14px; line-height: 1.8; padding-left: 18px;">
-                <li>Title Scrutiny and Verification Reports (13 to 30 Years Search).</li>
-                <li>Partition Suits and Ancestral Property Claims.</li>
-                <li>Land Acquisition, Boundary & Encroachment Disputes.</li>
-                <li>Drafting Sale Deeds, Power of Attorney.</li>
-            </ul>
-        </div>
-
-        <!-- Family Law -->
-        <div class="service-card" style="background: #fdfdfd; padding: 30px; border: 1px solid #eee; border-radius: 8px;">
-            <h3 style="font-size: 20px; color: #111; margin-bottom: 15px;">Family & Matrimonial Law</h3>
-            <ul style="color: #555; font-size: 14px; line-height: 1.8; padding-left: 18px;">
-                <li>Compassionate Handling of Domestic & Matrimonial Disputes.</li>
-                <li>Divorce Proceedings (Mutual Consent & Contested).</li>
-                <li>Child Custody, Guardianship, and Visitation Rights.</li>
-                <li>Maintenance, Alimony, and Protection.</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-</body>
-</html>
+                <p style="font
