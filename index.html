@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RR ASSOCIATES</title>
+    <title>RR ASSOCIATES | Legal Services</title>
     <style>
         * {
             box-sizing: border-box;
@@ -18,42 +18,108 @@
             line-height: 1.6;
         }
 
-        /* NAVBAR */
+        /* HEADER SECTION */
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 8%;
-            background-color: #ffffff;
-            border-bottom: 1px solid #eeeeee;
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+            font-family: 'Times New Roman', Times, serif;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        .logo-area {
+        .header-top {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        .logo-text {
-            font-weight: 800;
-            font-size: 18px;
-            color: #1a2332;
+        .header-left {
+            font-family: Arial, sans-serif;
+        }
+
+        .header-left h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #111;
             letter-spacing: 0.5px;
         }
 
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            color: #555555;
-            font-size: 14px;
-            font-weight: 500;
+        .header-left span {
+            font-size: 11px;
+            color: #555;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            display: block;
+            margin-top: 2px;
         }
 
-        nav a:hover {
-            color: #1a2332;
+        .header-center {
+            text-align: center;
+        }
+
+        .logo-rr {
+            font-size: 48px;
+            font-weight: 900;
+            color: #1a1a1a;
+            letter-spacing: -2px;
+            line-height: 0.8;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .logo-sub {
+            font-size: 13px;
+            font-weight: bold;
+            color: #1a1a1a;
+            letter-spacing: 2px;
+            margin-top: 6px;
+            text-transform: uppercase;
+            font-family: 'Times New Roman', serif;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 13px;
+            color: #444;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-right a {
+            color: #444;
+            text-decoration: none;
+        }
+
+        .btn-consult {
+            background-color: #a3a3a3;
+            color: #ffffff !important;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 13px;
+            display: inline-block;
+        }
+
+        nav {
+            border-top: 1px solid #f0f0f0;
+            text-align: center;
+            padding: 12px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
         }
 
         /* HERO SECTION */
@@ -332,11 +398,36 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
+<!-- HEADER SECTION -->
 <header>
-    <div class="logo-area">
-        <div class="logo-text">RR ASSOCIATES</div>
+    <div class="header-top">
+        <!-- Left Text -->
+        <div class="header-left">
+            <h2>RR ASSOCIATES</h2>
+            <span>ATTORNEY AT LAW</span>
+        </div>
+
+        <!-- Center Logo (Clean Serif RR - No Emojis/Icons) -->
+        <div class="header-center">
+            <div class="logo-rr">RR</div>
+            <div class="logo-sub">RR ASSOCIATES</div>
+        </div>
+
+        <!-- Right Contact -->
+        <div class="header-right">
+            <div style="text-align: right;">
+                <div style="margin-bottom: 4px;">
+                    <a href="mailto:law.rrassociates@gmail.com">✉ law.rrassociates@gmail.com</a>
+                </div>
+                <div>
+                    <a href="https://wa.me/919150441442">💬 +91 9150441442</a>
+                </div>
+            </div>
+            <a href="#contact" class="btn-consult">Get Legal Consultation</a>
+        </div>
     </div>
+
+    <!-- Navigation Bar -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
